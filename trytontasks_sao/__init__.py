@@ -26,14 +26,6 @@ def grunt():
     print t.bold('Done')
 
 @task
-def locales():
-    'Locales SAO'
-    os.chdir('sao')
-    os.system('grunt po2json')
-
-    print t.bold('Done')
-
-@task
 def open(server):
     'Open SAO in browser'
     Servers = read_config_file('servers.cfg', type='servers')
